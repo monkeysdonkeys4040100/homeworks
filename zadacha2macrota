@@ -1,0 +1,16 @@
+#include <stdio.h>
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+int main()
+{
+int a;
+int b;
+scanf (“%d%d”, &a, &b);
+printf (“%d”, MAX(a, b));
+return 0;
+}
+3. #include <stdio.h>
+
+#define DEBUG_PRINT(variable) \
+	printf("Variable: %s\nValue: %d\nFile: %s\nLine: %d\n", #variable ,variable, __FILE__, __LINE__)
+	int main()
+{
